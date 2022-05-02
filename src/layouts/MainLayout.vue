@@ -19,15 +19,16 @@
           </q-avatar>
           ProviderSharing
         </q-toolbar-title>
-
-        <div>v{{ version }}</div>
+        <q-btn flat round dense icon="search" class="q-mr-xs" />
       </q-toolbar>
-      <q-tabs align="left">
-        <!--중요한것 몇개만 link -->
-        <q-route-tab to="/About" label="About" />
-        <q-route-tab to="/program" label="Programs" />
-        <q-route-tab to="/contact" label="Contact" />
-      </q-tabs>
+      <q-toolbar inset>
+        <q-tabs align="left">
+          <!--중요한것 몇개만 link -->
+          <q-route-tab to="/About" label="About" />
+          <q-route-tab to="/program" label="Programs" />
+          <q-route-tab to="/contact" label="Contact" />
+        </q-tabs>
+      </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
